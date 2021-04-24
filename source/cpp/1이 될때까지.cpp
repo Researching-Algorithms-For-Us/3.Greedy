@@ -19,10 +19,11 @@ int main()
         }
         else
         {
-            ProcessCount += N % K;
-            N -= ProcessCount;
+            int tmp = (N > K ? N % K : N - 1);
+            ProcessCount += tmp;
+            N -= tmp;
         } 
-            
+ 
     }
 
     std::cout << ProcessCount << "\n";
