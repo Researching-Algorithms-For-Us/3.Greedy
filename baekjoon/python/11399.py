@@ -1,7 +1,4 @@
 # source code
-
-
-
 #########################################
 # p1 = 3
 # p2 = 1
@@ -26,15 +23,11 @@ def set_input():
 
 def main():
     value_list, _ = set_input()
-    value_list.sort()
 
-    out = 0
-    #tmp = [ v for v in value_list ]
-    
-    for i in range(len(value_list)):
-        sum = value_list[i]
-        for j in range(i):
-            sum += value_list[j]
+    value_list.sort()
+    out, sum = 0, 0
+    for v in value_list:
+        sum += v
         out += sum
 
     print(out)
