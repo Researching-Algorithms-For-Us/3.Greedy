@@ -25,6 +25,6 @@ int main()
             
     }
 
-    std::cout << ProcessCount;
+    std::cout << ProcessCount << "\n";
     return 0;
 }

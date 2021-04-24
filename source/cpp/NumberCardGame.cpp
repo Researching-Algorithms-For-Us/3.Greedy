@@ -1,12 +1,3 @@
-/*
-    난이도 : 하
-    풀이시간 제한 : 30분
-    시간 제한 : 1초
-    메모리 제한 : 128메가 
-    기출 : 2019 국가 교육기관 코딩 테스트
-*/
-
-
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -44,8 +35,5 @@ int main()
 
     std::sort(ResultVector.begin(), ResultVector.end(), std::greater<int>());
     std::cout << ResultVector[0] << std::endl;
-
-    
-
 
 }
