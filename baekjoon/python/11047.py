@@ -1,4 +1,8 @@
 # source code
+'''
+out += value//coin
+value %= coin
+'''
 def set_input():
     size, value = map(int, input().split())
     
@@ -19,4 +23,6 @@ def main():
         value %= coin
     print(out)
 
-main()
+if __name__ == '__main__':
+    main()
+    

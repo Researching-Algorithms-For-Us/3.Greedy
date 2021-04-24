@@ -62,4 +62,5 @@ def main():
 
     print(count)
 
-main()
+if __name__ == '__main__':
+    main()
