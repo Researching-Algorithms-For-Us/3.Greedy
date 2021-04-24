@@ -1,13 +1,22 @@
 # source code
-N, K = map(int, input().split())
-c_list = []
-for _ in range(0,N):
-    i = input()
-    c_list.append(int(i))
-c_list.reverse()
+def set_input():
+    size, value = map(int, input().split())
+    
+    coin_list = []
+    for _ in size:
+        coin = input()
+        coin_list.append(int(coin))
 
-out = 0
-for c in c_list:
-    out += K//c
-    K %= c
-print(out)
+    return value, coin_list
+
+def main():   
+    value, coin_list = set_input()
+    coin_list.reverse()
+
+    out = 0
+    for coin in coin_list:
+        out += value//coin
+        value %= coin
+    print(out)
+
+main()

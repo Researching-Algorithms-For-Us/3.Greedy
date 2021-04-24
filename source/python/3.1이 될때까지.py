@@ -2,7 +2,7 @@ def fun():
     N = 25
     K = 3
     
-    count = 0
+    out = 0
 
     while True:
         if N%K == 0:
@@ -10,9 +10,8 @@ def fun():
         else:
             N = N - 1
 
-        count += 1
+        out += 1
         if N == 1:
             break
     
-    out = count
     return out
