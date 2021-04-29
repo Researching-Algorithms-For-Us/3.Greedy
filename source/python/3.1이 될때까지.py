@@ -1,4 +1,4 @@
-def fun():
+def main():
     N = 25
     K = 3
     
@@ -15,3 +15,6 @@ def fun():
             break
     
     return out
+
+if __name__ == '__main__':
+    main()

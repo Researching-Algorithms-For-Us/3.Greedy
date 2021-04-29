@@ -1,4 +1,4 @@
-def fun():
+def main():
     N = 5
     M = 8
     K = 3
@@ -14,3 +14,6 @@ def fun():
     out = K*first_max_num*first+second_max_num*second
     
     return out
+
+if __name__ == '__main__':
+    main()
